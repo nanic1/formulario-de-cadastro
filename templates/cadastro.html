@@ -12,6 +12,15 @@
             <img src="../../static/assets/img/undraw_complete-form_aarh.svg" alt="">
         </div>
         <div class="form">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for categoria, mensagem in messages %}
+                        <div class="alert {{ categoria }}">
+                            {{ mensagem }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
             <form action="/registro" method="POST">
                 <div class="form-header">
                     <div class="title">

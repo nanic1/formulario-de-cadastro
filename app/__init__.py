@@ -1,5 +1,5 @@
 import os
-from flask import Flask
+from flask import Flask, app
 from flask_sqlalchemy import SQLAlchemy
 import pymysql
 from dotenv import load_dotenv
@@ -11,7 +11,6 @@ load_dotenv()
 
 # create db if not exist on MySQL workbench
 def create_database():
-    SECRET_KEY = os.getenv("SECRET_KEY")
     connection = pymysql.connect(
         host=os.getenv("DB_HOST"),
         user=os.getenv("DB_USER"),
@@ -26,6 +25,7 @@ def create_database():
 
 # create tables if not exist on MySQL workbench
 def create_app():
+    # setting directories for templates and static files
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     templates_dir = os.path.join(base_dir, "templates")
     static_dir = os.path.join(base_dir, "static")
