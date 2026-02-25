@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../../static/assets/css/style.css">
     <title>Registro</title>
 </head>
 <body>
     <div class="container">
         <div class="form-image">
-            <img src="assets/img/undraw_complete-form_aarh.svg" alt="">
+            <img src="../../static/assets/img/undraw_complete-form_aarh.svg" alt="">
         </div>
         <div class="form">
-            <form action="#">
+            <form action="/registro" method="POST">
                 <div class="form-header">
                     <div class="title">
                         <h1>Cadastre-se</h1>
@@ -60,29 +60,28 @@
 
                     <div class="gender-group">
                         <div class="gender-input">
-                            <input type="radio" id="female" name="gender">
+                            <input type="radio" id="female" name="gender" value="Feminino">
                             <label for="female">Feminino</label>
                         </div>
 
                         <div class="gender-input">
-                            <input type="radio" id="male" name="gender">
+                            <input type="radio" id="male" name="gender" value="Masculino">
                             <label for="male">Masculino</label>
                         </div>
 
                         <div class="gender-input">
-                            <input type="radio" id="others" name="gender">
+                            <input type="radio" id="others" name="gender" value="Outros">
                             <label for="others">Outros</label>
                         </div>
 
                         <div class="gender-input">
-                            <input type="radio" id="none" name="gender">
+                            <input type="radio" id="none" name="gender" value="Prefiro não dizer">
                             <label for="none">Prefiro não dizer</label>
                         </div>
                     </div>
                 </div>
-
                 <div class="continue-button">
-                    <button><a href="#">Continuar</a></button>
+                    <button type="submit">Continuar</button>
                 </div>
             </form>
         </div>
