@@ -1,11 +1,13 @@
 # Sistema de Cadastro
-Aplicação web de cadastro de usuários desenvolvida com Python + Flask + MySQL, com validação de formulário e armazenamento em banco de dados. Projeto Full Stack simples visando apenas 
+Aplicação web de cadastro de usuários desenvolvida com Python + Flask + MySQL, com validação de formulário e armazenamento em banco de dados. Projeto Full Stack simples visando apenas aprendizado.
 
 ## Tecnologias usadas
 * Python
 * Flask
 * MySQL
 * HTML5 + CSS3
+
+Instale corretamente o Python e o MySQL Workbench para melhor utilizamento do aplicativo
 
 ## Estrutura do Projeto
 ```
